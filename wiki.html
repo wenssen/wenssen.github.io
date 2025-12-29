@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki - WENSSEN</title>
+    <link rel="icon" type="image/x-icon" href="ttps://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png">
+    <meta name="description" content="Wiki de Brezel Minecraft - Tu guía definitiva del juego"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Akrobat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="fullscreen-video">
+        <video autoplay muted loop playsinline>
+            <source src="video/background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="/" class="logo">
+                    <img src="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png" alt="Logo de wenssen">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">RESUMEN</a></li>
+                    <li><a href="servers.html" class="nav-link">WHITELIST</a></li>
+                    <li><a href="community.html" class="nav-link">COMUNIDAD</a></li>
+                    <li><a href="wiki.html" class="nav-link active">WIKI</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                 <div class="footer-social">
+                    <a href="https://discord.gg/FMFYqA3zYx" class="discord" data-aos="fade-left" data-aos-delay="100"><i class="fab fa-discord"></i></a>
+                    <!--<a href="#" class="twitter" data-aos="fade-left" data-aos-delay="200"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://www.youtube.com/@wenssen" class="youtube" data-aos="fade-left" data-aos-delay="300"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@wenssenrp" class="tiktok" data-aos="fade-left" data-aos-delay="400"><i class="fab fa-tiktok"></i></a>
+                 </div>
+                <!-- <div class="server-status-mini">
+                    <div class="status-indicator"></div>
+                    <span class="player-count">128/128</span>
+                    <div class="dropdown-menu">
+                        <div class="server-actions">
+                            <button class="server-action-btn">
+                                <i class="fas fa-signal"></i>
+                                <span>TPS: 20.0</span>
+                            </button>
+                            <button class="server-action-btn">
+                                <i class="fas fa-bolt"></i>
+                                <span>Latencia: 0.1ms</span>
+                            </button>
+                            <button class="server-action-btn">
+                                <i class="fas fa-clock"></i>
+                                <span>Tiempo activo: 99.9%</span>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="theme-switch">
+                    <input type="checkbox" id="theme-toggle" class="theme-input">
+                    <label for="theme-toggle" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <main>
+        <section class="wiki-section">
+            <div class="wiki-container">
+                <aside class="wiki-sidebar">
+                    <div class="wiki-search">
+                        <input type="text" placeholder="Buscar en la wiki..." id="wikiSearch">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <nav class="wiki-nav desktop-nav">
+                        <h3>Categorías</h3>
+                        <ul>
+                            <li><a href="#getting-started" class="active"><i class="fas fa-play"></i>Primeros Pasos</a></li>
+                            <li><a href="#survival"><i class="fas fa-tree"></i>Modo Supervivencia</a></li>
+                            <li><a href="#skyblock"><i class="fas fa-cloud"></i>Skyblock</a></li>
+                            <li><a href="#factions"><i class="fas fa-shield-alt"></i>Facciones</a></li>
+                            <li><a href="#economy"><i class="fas fa-coins"></i>Sistema Económico</a></li>
+                            <li><a href="#commands"><i class="fas fa-terminal"></i>Comandos</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <div class="wiki-content">
+                    <nav class="wiki-nav mobile-nav">
+                        <h3>Categorías</h3>
+                        <div class="categories-grid">
+                            <a href="#getting-started" class="category-card active">
+                                <i class="fas fa-play"></i>
+                                <span>Primeros Pasos</span>
+                            </a>
+                            <a href="#survival" class="category-card">
+                                <i class="fas fa-tree"></i>
+                                <span>Modo Supervivencia</span>
+                            </a>
+                            <a href="#skyblock" class="category-card">
+                                <i class="fas fa-cloud"></i>
+                                <span>Skyblock</span>
+                            </a>
+                            <a href="#factions" class="category-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Facciones</span>
+                            </a>
+                            <a href="#economy" class="category-card">
+                                <i class="fas fa-coins"></i>
+                                <span>Sistema Económico</span>
+                            </a>
+                            <a href="#commands" class="category-card">
+                                <i class="fas fa-terminal"></i>
+                                <span>Comandos</span>
+                            </a>
+                        </div>
+                    </nav>
+
+                    <article class="wiki-article" id="getting-started">
+                        <h2>Primeros Pasos</h2>
+                        <p>¡Bienvenido a Brezel Minecraft! Esta guía contiene información esencial para comenzar tu aventura en nuestro servidor.</p>
+                        
+                        <div class="server-connect-modern">
+                            <div class="server-ip-box">
+                                <span class="ip-label">IP del Servidor</span>
+                                <div class="ip-container">
+                                    <span class="ip-text">play.brezel.com</span>
+                                    <button class="copy-ip-btn" data-ip="play.brezel.com">
+                                        <i class="fas fa-copy"></i>
+                                        <span class="tooltip">Copiar IP</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Guía Rápida</h3>
+                        <ol>
+                            <li>Inicia Minecraft Java Edition</li>
+                            <li>Haz clic en Multijugador > Agregar Servidor</li>
+                            <li>Introduce la dirección del servidor arriba</li>
+                            <li>¡Únete al servidor y comienza tu aventura!</li>
+                        </ol>
+                    </article>
+
+                    <article class="wiki-article" id="survival">
+                        <h2>Modo Supervivencia</h2>
+                        <p>Nuestro modo supervivencia combina la jugabilidad clásica de Minecraft con plugins personalizados y un sistema económico dinámico.</p>
+                        <h3>Características</h3>
+                        <ul>
+                            <li>Sistema económico avanzado</li>
+                            <li>Recetas de crafteo personalizadas</li>
+                            <li>Ítems únicos</li>
+                            <li>Zonas PvP y PvE</li>
+                        </ul>
+                    </article>
+
+                    <article class="wiki-article" id="skyblock">
+                        <h2>Skyblock</h2>
+                        <p>¡Crea tu imperio en una isla, desarróllalo y comercia con otros jugadores!</p>
+                        <h3>Comandos de Isla</h3>
+                        <ul>
+                            <li><code>/island create</code> - Crear nueva isla</li>
+                            <li><code>/island home</code> - Teletransportarse a la isla</li>
+                            <li><code>/island invite [jugador]</code> - Invitar a un jugador</li>
+                            <li><code>/island settings</code> - Configuración de la isla</li>
+                        </ul>
+                    </article>
+
+                    <article class="wiki-article" id="factions">
+                        <h2>Facciones</h2>
+                        <p>¡Forma tu clan y participa en épicas guerras territoriales!</p>
+                        <h3>Comandos Básicos</h3>
+                        <ul>
+                            <li><code>/f create [nombre]</code> - Crear nueva facción</li>
+                            <li><code>/f invite [jugador]</code> - Invitar a un jugador</li>
+                            <li><code>/f claim</code> - Reclamar territorio</li>
+                            <li><code>/f map</code> - Mostrar mapa de facciones</li>
+                        </ul>
+                    </article>
+
+                    <article class="wiki-article" id="economy">
+                        <h2>Sistema Económico</h2>
+                        <p>Nuestro servidor cuenta con un sofisticado sistema económico.</p>
+                        <h3>Comandos de Moneda</h3>
+                        <ul>
+                            <li><code>/money</code> - Ver tu saldo</li>
+                            <li><code>/pay [jugador] [cantidad]</code> - Transferir dinero</li>
+                            <li><code>/shop</code> - Abrir menú de mercado</li>
+                            <li><code>/sell</code> - Vender ítems</li>
+                        </ul>
+                    </article>
+
+                    <article class="wiki-article" id="commands">
+                        <h2>Comandos Generales</h2>
+                        <p>Comandos esenciales disponibles en nuestro servidor:</p>
+                        <ul>
+                            <li><code>/spawn</code> - Teletransportarse al spawn</li>
+                            <li><code>/tpa [jugador]</code> - Enviar solicitud de teletransporte</li>
+                            <li><code>/sethome</code> - Establecer ubicación de casa</li>
+                            <li><code>/home</code> - Teletransportarse a casa</li>
+                            <li><code>/msg [jugador] [mensaje]</code> - Enviar mensaje privado</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('wikiSearch');
+            const wikiArticles = document.querySelectorAll('.wiki-article');
+            const navLinks = document.querySelectorAll('.wiki-nav a');
+
+            function filterContent() {
+                const searchTerm = searchInput.value.toLowerCase();
+                let hasResults = false;
+
+                wikiArticles.forEach(article => {
+                    const title = article.querySelector('h2').textContent.toLowerCase();
+                    const content = article.textContent.toLowerCase();
+                    const isMatch = title.includes(searchTerm) || content.includes(searchTerm);
+
+                    article.style.display = isMatch ? 'block' : 'none';
+                    if (isMatch) hasResults = true;
+
+                    if (isMatch && searchTerm !== '') {
+                        const articleId = article.id;
+                        navLinks.forEach(link => {
+                            if (link.getAttribute('href') === `#${articleId}`) {
+                                navLinks.forEach(l => l.classList.remove('active'));
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+
+                let noResultsMsg = document.querySelector('.no-results-message');
+                if (!hasResults && searchTerm !== '') {
+                    if (!noResultsMsg) {
+                        noResultsMsg = document.createElement('div');
+                        noResultsMsg.className = 'no-results-message';
+                        noResultsMsg.innerHTML = `
+                            <div class="no-results-content">
+                                <i class="fas fa-search"></i>
+                                <p>No se encontraron resultados</p>
+                                <span>Prueba con otras palabras clave</span>
+                            </div>
+                        `;
+                        document.querySelector('.wiki-content').appendChild(noResultsMsg);
+                    }
+                } else if (noResultsMsg) {
+                    noResultsMsg.remove();
+                }
+            }
+
+            searchInput.addEventListener('input', filterContent);
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                    
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        wikiArticles.forEach(article => {
+                            article.style.display = 'none';
+                        });
+                        targetElement.style.display = 'block';
+                        
+                        const headerOffset = 80;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinksMobile = document.querySelector('.nav-links');
+            const navOverlay = document.querySelector('.nav-overlay');
+            
+            function toggleMobileMenu() {
+                mobileMenuBtn.classList.toggle('active');
+                navLinksMobile.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+                document.body.style.overflow = navLinksMobile.classList.contains('active') ? 'hidden' : '';
+            }
+
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            navOverlay.addEventListener('click', toggleMobileMenu);
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinksMobile.classList.contains('active')) {
+                        toggleMobileMenu();
+                    }
+                });
+            });
+
+            const themeToggle = document.getElementById('theme-toggle');
+            const root = document.documentElement;
+            const storedTheme = localStorage.getItem('theme') || 'dark';
+            
+            root.setAttribute('data-theme', storedTheme);
+            themeToggle.checked = storedTheme === 'light';
+
+            themeToggle.addEventListener('change', () => {
+                const newTheme = themeToggle.checked ? 'light' : 'dark';
+                root.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+
+                document.body.style.transition = 'background-color 0.3s ease';
+                setTimeout(() => {
+                    document.body.style.transition = '';
+                }, 300);
+            });
+
+            function handleResize() {
+                if (window.innerWidth > 768) {
+                    navLinksMobile.classList.remove('active');
+                    navOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            window.addEventListener('resize', handleResize);
+        });
+    </script>
+</body>
+</html>

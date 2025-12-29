@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario - Wenssen</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Akrobat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #111;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+    }
+
+    .formulario label {
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .formulario input,
+    .formulario textarea,
+    .formulario select {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: none;
+      width: 100%;
+      background-color: #222;
+      color: #fff;
+    }
+
+    .formulario input:focus,
+    .formulario textarea:focus,
+    .formulario select:focus {
+      outline: 2px solid #00ff88;
+    }
+
+    .formulario button.primary-btn {
+      background-color: #00c6a2;
+      color: white;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .formulario button.primary-btn:hover {
+      background-color: #00ff88;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png" alt="Logo Wenssen">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">RESUMEN</a></li>
+          <li><a href="servers.html" class="nav-link active">FORMULARIO</a></li>
+          <li><a href="community.html" class="nav-link">COMUNIDAD</a></li>
+          <li><a href="wiki.html" class="nav-link">WIKI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-overlay"></div>
+  </header>
+
+  <main class="container" style="padding: 8rem 1rem 4rem;">
+    <div class="page-header">
+      <div class="header-content">
+        <h1>POSTULACIÓN</h1>
+        <p>Llena este formulario para entrar a nuestros servidores.</p>
+      </div>
+    </div>
+
+    <form class="formulario" id="whitelistForm">
+      <h2>Ficha de Personaje - Wenssen RP</h2>
+
+      <label for="username">Nombre del personaje</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="age">Edad</label>
+      <input type="number" id="age" name="age" required min="16" max="90" />
+
+      <label for="discordId">Discord ID</label>
+      <input type="text" id="discordId" name="discordId" required pattern="\d{18}" />
+
+      <label for="origin">¿Dónde nació tu personaje?</label>
+      <textarea id="origin" name="origin" rows="3" required placeholder="¿Dentro de Wenssen? ¿Fuera del muro? ¿Refugiado, criado por el sistema...?"></textarea>
+
+      <label for="aspiration">¿A qué facción aspira pertenecer?</label>
+      <select id="aspiration" name="aspiration" required>
+        <option value="">-- Elige una opción --</option>
+        <option value="WEMS">WEMS - Servicios Médicos</option>
+        <option value="WPD">WPD - Policía de Wenssen</option>
+        <option value="Delictual">Delictual - Actividades Ilegales</option>
+      </select>
+
+      <label for="background">Historia del personaje</label>
+      <textarea id="background" name="background" rows="5" required placeholder="Su historia, motivaciones pasadas, eventos importantes..."></textarea>
+
+      <label for="job">¿Cuál es su ocupación actual?</label>
+      <textarea id="job" name="job" rows="2" required placeholder="Ej: Técnico, comerciante, criminal, civil..."></textarea>
+
+      <label for="goals">Objetivos o motivaciones</label>
+      <textarea id="goals" name="goals" rows="3" required></textarea>
+
+      <label for="skills">Fortalezas / Habilidades</label>
+      <textarea id="skills" name="skills" rows="2" required placeholder="Ej: liderazgo, hackeo, manipulación, medicina, etc."></textarea>
+
+      <label for="flaws">Debilidades / Defectos</label>
+      <textarea id="flaws" name="flaws" rows="2" required placeholder="Ej: paranoia, impulsividad, falta de empatía..."></textarea>
+
+      <label for="secret">¿Oculta algún secreto?</label>
+      <textarea id="secret" name="secret" rows="3" placeholder="Opcional. Algo que podría salir a la luz en rol..."></textarea>
+
+      <button type="submit" class="primary-btn" style="margin-top: 1rem;">
+        <i class="fas fa-paper-plane"></i> Enviar Ficha
+      </button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById('whitelistForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const age = document.getElementById('age').value;
+      const discordId = document.getElementById('discordId').value;
+      const origin = document.getElementById('origin').value;
+      const aspiration = document.getElementById('aspiration').value;
+      const background = document.getElementById('background').value;
+      const job = document.getElementById('job').value;
+      const goals = document.getElementById('goals').value;
+      const skills = document.getElementById('skills').value;
+      const flaws = document.getElementById('flaws').value;
+      const secret = document.getElementById('secret').value;
+
+      const webhookURL = 'https://discord.com/api/webhooks/1414986593692811275/TvQx_UQH1hvrcMYU_BnTTmIRZw4qbzO73Imkfc9Y5iJDX6jq1_q0SWvCDb89jLk28wbe';
+
+      const payload = {
+        content: "<@&1368019844724818021>", // Menciona al rol
+        embeds: [
+          {
+            title: "📥 Nueva postulación Whitelist",
+            color: 0x00ff88,
+            fields: [
+              { name: "👤 Usuario", value: username, inline: true },
+              { name: "🎂 Edad", value: age, inline: true },
+              { name: "💬 Discord ID", value: discordId, inline: true },
+              { name: "🌍 Origen", value: origin },
+              { name: "🏳️ Aspiración", value: aspiration },
+              { name: "📖 Historia", value: background },
+              { name: "💼 Ocupación actual", value: job },
+              { name: "🎯 Objetivos", value: goals },
+              { name: "💪 Habilidades", value: skills },
+              { name: "⚠️ Defectos", value: flaws },
+              { name: "🕵️ Secreto", value: secret || "Ninguno" }
+            ],
+            footer: {
+              text: "Wenssen RP - Sistema de Whitelist",
+              icon_url: "https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png"
+            },
+            timestamp: new Date().toISOString()
+          }
+        ]
+      };
+
+      try {
+        const response = await fetch(webhookURL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          alert('✅ ¡Formulario enviado correctamente!');
+          this.reset();
+        } else {
+          alert('❌ Error al enviar formulario. Intenta más tarde.');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('❌ Error de conexión. Verifica tu red.');
+      }
+    });
+  </script>
+</body>
+</html>
