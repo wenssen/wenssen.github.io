@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wenssen</title>
     <link rel="icon" type="image/x-icon" href="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png">
-
-    <!-- Ajustado: sin Minecraft -->
-    <meta name="description" content="Wenssen RP — Servidor FiveM. Roleplay serio, trabajos, economía, eventos y comunidad."/>
-    
+    <meta name="description" content="Servidor de rol serio en FiveM. Vive una nueva vida en Wenssen RP.">
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-
 <body>
   <div class="background-video">
     <!-- <video autoplay muted loop playsinline id="bgVideo">
@@ -28,28 +24,26 @@
     <div class="nav-container">
       <div class="nav-left">
         <a href="/" class="logo">
-          <img src="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png" alt="Wenssen RP">
+          <img src="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png" alt="TIENDA EYES">
         </a>
-
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menú">
           <i class="fas fa-bars"></i>
         </button>
-
         <ul class="nav-links" id="navLinks">
-          <li><a href="index.html" class="nav-link active">RESUMEN</a></li>
-          <li><a href="servers.html" class="nav-link">WHITELIST</a></li>
+          <li><a href="index.html" class="nav-link active">INICIO</a></li>
+          <li><a href="servers.html" class="nav-link">FORMULARIO</a></li>
           <li><a href="community.html" class="nav-link">COMUNIDAD</a></li>
           <li><a href="wiki.html" class="nav-link">WIKI</a></li>
         </ul>
       </div>
-
       <div class="nav-right">
         <div class="server-status-mini">
-          <div class="footer-social">
-            <a href="https://discord.gg/FMFYqA3zYx" class="discord" data-aos="fade-left" data-aos-delay="100"><i class="fab fa-discord"></i></a>
-            <a href="https://www.youtube.com/@wenssen" class="youtube" data-aos="fade-left" data-aos-delay="300"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.tiktok.com/@wenssenrp" class="tiktok" data-aos="fade-left" data-aos-delay="400"><i class="fab fa-tiktok"></i></a>
-          </div>
+           <div class="footer-social">
+             <a href="https://discord.gg/FMFYqA3zYx" class="discord" data-aos="fade-left" data-aos-delay="100"><i class="fab fa-discord"></i></a>
+             <!--<a href="#" class="twitter" data-aos="fade-left" data-aos-delay="200"><i class="fab fa-twitter"></i></a> -->
+             <a href="https://www.youtube.com/@wenssen" class="youtube" data-aos="fade-left" data-aos-delay="300"><i class="fab fa-youtube"></i></a>
+             <a href="https://www.tiktok.com/@wenssenrp" class="tiktok" data-aos="fade-left" data-aos-delay="400"><i class="fab fa-tiktok"></i></a>
+           </div>
         </div>
       </div>
     </div>
@@ -58,24 +52,19 @@
 
   <main>
     <section class="hero-section">
-      <!-- Corregido: particlesJS busca un ID -->
-      <div id="hero-particles" class="hero-particles"></div>
-
+      <div class="hero-particles"></div>
       <div class="hero-content">
         <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="glowing-text">WENSSEN</h1>
-          <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
-            No es un juego, es una realidad paralela. Y empieza aquí.
-          </p>
-
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="200">No es un juego, es una realidad paralela. Y empieza aquí.</p>
           <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-            <a href="https://discord.gg/vZw54TUW7G" class="primary-btn pulse-btn">
+            <a href="https://servers.fivem.net/servers/detail/aepabe" class="primary-btn pulse-btn">
               <span class="btn-content">
                 <i class="fas fa-play"></i>
-                ENTRAR AL SERVIDOR
+                JUGAR AHORA
               </span>
             </a>
-            <a href="https://discord.gg/FMFYqA3zYx" class="secondary-btn glow-btn">
+            <a href="https://discord.gg/vZw54TUW7G" class="secondary-btn glow-btn">
               <span class="btn-content">
                 <i class="fab fa-discord"></i>
                 UNIRSE AL DISCORD
@@ -83,211 +72,252 @@
             </a>
           </div>
         </div>
-
-        <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+        <div class="hero-stats">
           <div class="stat-item">
             <i class="fas fa-users"></i>
             <span id="playerCount">Cargando...</span>
             <p id="playerStatusMessage">Jugadores en línea</p>
+            <small id="serverStatus" style="opacity:.8;"></small>
           </div>
         </div>
-      </div>
     </section>
 
-    <section class="features-section">
-      <div class="section-header" data-aos="fade-up">
-        <h2>¿QUÉ ENCUENTRAS EN WENSSEN RP?</h2>
-        <p>Roleplay, economía, trabajos, eventos y una comunidad activa</p>
+  <section class="features-section">
+    <div class="section-header" data-aos="fade-up">
+      <h2>MODOS DE JUEGO</h2>
+      <p>Explora las experiencias únicas de rol en Wenssen RP</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Trabajos legales</h3>
+        <p>Taxista, mecánico, EMS, repartidor y más. ¡Empieza desde abajo y hazte un nombre!</p>
+        <a href="#" class="feature-btn">Ver empleos</a>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="feature-icon">
-            <i class="fas fa-user-tie"></i>
-          </div>
-          <h3>Roleplay Serio</h3>
-          <p>Interpretación, leyes, facciones y una ciudad viva con decisiones que importan.</p>
-          <a href="wiki.html" class="feature-btn">Saber Más</a>
-        </div>
-
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="feature-icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <h3>Trabajos & Economía</h3>
-          <p>Progresión real: empleos, negocios, mercado, inventario y mejoras.</p>
-          <a href="wiki.html" class="feature-btn">Saber Más</a>
-        </div>
-
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="feature-icon">
-            <i class="fas fa-flag-checkered"></i>
-          </div>
-          <h3>Eventos & Carreras</h3>
-          <p>Eventos semanales, carreras, actividades y recompensas para la comunidad.</p>
-          <a href="community.html" class="feature-btn">Saber Más</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="news-section">
-      <div class="section-header" data-aos="fade-up">
-        <h2>ÚLTIMAS NOVEDADES</h2>
-        <p>Actualizaciones del servidor, eventos y cambios importantes</p>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-icon"><i class="fas fa-mask"></i></div>
+        <h3>Rol criminal</h3>
+        <p>Forma tu banda, planea asaltos, contrabandea y domina el bajo mundo de Wenssen.</p>
+        <a href="#" class="feature-btn">Saber más</a>
       </div>
 
-      <div class="news-grid">
-        <div class="news-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="news-content">
-            <div class="news-meta">
-              <span class="date">Próximamente</span>
-              <span class="category">Actualización</span>
-            </div>
-            <h3>Nuevas mecánicas RP</h3>
-            <p>Ajustes de economía, calidad de vida y mejoras de rendimiento.</p>
-            <a href="community.html" class="news-btn">Leer Más</a>
-          </div>
-        </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+        <h3>Fuerzas del orden</h3>
+        <p>Únete al cuerpo policial o servicios médicos y protege la ciudad con rol de calidad.</p>
+        <a href="#" class="feature-btn">Aplicar</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="news-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="news-content">
-            <div class="news-meta">
-              <span class="date">Próximamente</span>
-              <span class="category">Evento</span>
-            </div>
-            <h3>Evento comunitario</h3>
-            <p>Actividad abierta con premios y participación de facciones.</p>
-            <a href="community.html" class="news-btn">Leer Más</a>
-          </div>
-        </div>
+  <section class="news-section">
+    <div class="section-header" data-aos="fade-up">
+      <h2>ACTUALIZACIONES</h2>
+      <p>Últimos cambios importantes del servidor</p>
+    </div>
 
-        <div class="news-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="news-content">
-            <div class="news-meta">
-              <span class="date">Próximamente</span>
-              <span class="category">Whitelist</span>
-            </div>
-            <h3>Proceso de ingreso</h3>
-            <p>Revisa requisitos y pasos para entrar con whitelist.</p>
-            <a href="servers.html" class="news-btn">Leer Más</a>
+    <div class="news-grid">
+      <!-- Actualización 07/09/2025 -->
+      <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="news-content">
+          <div class="news-meta">
+            <span class="date">07 de Septiembre, 2025</span>
+            <span class="category">Release v1.0.1</span>
           </div>
+          <h3>Nuevas Características</h3>
+          <ul>
+            <li>Robos: Añadido Fleeca y Vangelico</li>
+            <li>Seguridad: Control de fronteras, zonas sin alerta y secuestro con bolsa</li>
+            <li>Cámara para inventario y sistema de apuntado mejorado</li>
+          </ul>
+          <h4>Correcciones</h4>
+          <ul>
+            <li>Duty multijob funcional</li>
+            <li>Ajustes a UI, bodycam y economía de semillas</li>
+            <li>Nueva tienda de comida exclusiva para policía</li>
+          </ul>
+          <h4>En desarrollo</h4>
+          <ul>
+            <li>Sistemas EMS/WPD en mejora</li>
+            <li>Cursos y certificaciones organizadas</li>
+            <li>Recursos visuales para formación práctica</li>
+          </ul>
         </div>
       </div>
-    </section>
-  </main>
 
+      <!-- Actualización 18/08/2025 -->
+      <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="news-content">
+          <div class="news-meta">
+            <span class="date">18 de Agosto, 2025</span>
+            <span class="category">Versión 1.0.1</span>
+          </div>
+          <h3>Nuevas Características</h3>
+          <ul>
+            <li>Casas y hoteles con IC</li>
+            <li>Sistema de enfermedades</li>
+            <li>Trenes en funcionamiento</li>
+            <li>/reportes en tiempo real al staff</li>
+          </ul>
+          <h4>Correcciones</h4>
+          <ul>
+            <li>Bug de inventario, mochila y starterpack corregidos</li>
+          </ul>
+          <h4>Discord</h4>
+          <ul>
+            <li>Autos boosteados</li>
+            <li>Postulaciones abiertas</li>
+            <li>Whitelist vinculada a ULore.net</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Actualización 02/05/2025 -->
+      <div class="news-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="news-content">
+          <div class="news-meta">
+            <span class="date">02 de Mayo, 2025</span>
+            <span class="category">Versión 1.0.1</span>
+          </div>
+          <h3>Nuevas Características</h3>
+          <ul>
+            <li>Más de 100 autos añadidos</li>
+            <li>Nuevo robo en aldea caníbal</li>
+            <li>Drogas con efectos variables</li>
+            <li>Mapeos y sistema de territorios</li>
+          </ul>
+          <h4>Corrección</h4>
+          <ul>
+            <li>Velocidad de autos policiales corregida</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer implementado -->
   <footer>
     <div class="footer-content">
-      <div class="footer-left" data-aos="fade-right">
-        <!-- Si quieres, cambia img/logo.png por tu logo real -->
-        <img src="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png" alt="Wenssen RP" class="footer-logo">
-        <p>© 2024 Wenssen RP — Todos los derechos reservados</p>
+      <div class="footer-left">
+        <img src="img/wenssen_logo_sin_fondo.png" alt="Wenssen" class="footer-logo">
+        <p>© 2025 Wenssen RP — “Vive la historia, crea tu realidad”.</p>
       </div>
-
-      <div class="footer-social" data-aos="fade-left">
+      <div class="footer-social">
         <a href="https://discord.gg/FMFYqA3zYx" class="discord"><i class="fab fa-discord"></i></a>
         <a href="https://www.youtube.com/@wenssen" class="youtube"><i class="fab fa-youtube"></i></a>
         <a href="https://www.tiktok.com/@wenssenrp" class="tiktok"><i class="fab fa-tiktok"></i></a>
       </div>
     </div>
   </footer>
-
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/main.js"></script>
+<!-- Sustituye TODO tu bloque JS actual por este -->
+<script>
+  AOS.init({ duration: 1000, once: true, mirror: false });
 
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      mirror: false
-    });
+  // Particles.js (asegúrate de tener el div con id="hero-particles")
+  particlesJS('hero-particles', {
+    particles: {
+      number: { value: 80, density: { enable: true, value_area: 800 } },
+      color: { value: '#00ff88' },
+      shape: { type: 'circle' },
+      opacity: { value: 0.5, random: true },
+      size: { value: 3, random: true },
+      line_linked: { enable: true, distance: 150, color: '#00ff88', opacity: 0.2, width: 1 },
+      move: { enable: true, speed: 2, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false }
+    },
+    interactivity: { detect_on: 'canvas', events: { onhover: { enable: true, mode: 'repulse' }, resize: true } },
+    retina_detect: true
+  });
 
-    // Particles.js
-    particlesJS('hero-particles', {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: '#00ff88' },
-        shape: { type: 'circle' },
-        opacity: { value: 0.5, random: true },
-        size: { value: 3, random: true },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: '#00ff88',
-          opacity: 0.2,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: 'none',
-          random: true,
-          straight: false,
-          out_mode: 'out',
-          bounce: false
-        }
-      },
-      interactivity: {
-        detect_on: 'canvas',
-        events: {
-          onhover: { enable: true, mode: 'repulse' },
-          onclick: { enable: true, mode: 'push' },
-          resize: true
-        }
-      },
-      retina_detect: true
-    });
+  // (Opcional) animaciones de contadores si usas .count-up
+  function animateCounter(element) {
+    const target = parseInt(element.getAttribute('data-target'));
+    const duration = 2000;
+    const step = target / (duration / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { element.textContent = target; clearInterval(timer); }
+      else { element.textContent = Math.floor(current); }
+    }, 16);
+  }
 
-    // Efecto scroll header
-    let lastScroll = 0;
-    const header = document.querySelector('.main-header');
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll <= 0) {
-        header.classList.remove('scroll-up');
-        return;
-      }
-      if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
-        header.classList.remove('scroll-up');
-        header.classList.add('scroll-down');
-      } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
-        header.classList.remove('scroll-down');
-        header.classList.add('scroll-up');
-      }
-      lastScroll = currentScroll;
-    });
-
-    // Obtener jugadores en línea y capacidad
-    async function getPlayerCount() {
-      const playerCountEl = document.getElementById("playerCount");
-      const statusMsgEl = document.getElementById("playerStatusMessage");
-
-      try {
-        const [playersRes, infoRes] = await Promise.all([
-          fetch("http://45.236.90.170:30120/players.json"),
-          fetch("http://45.236.90.170:30120/info.json")
-        ]);
-
-        const players = await playersRes.json();
-        const info = await infoRes.json();
-
-        const maxPlayers = info?.vars?.sv_maxClients || 64;
-        const currentPlayers = Array.isArray(players) ? players.length : 0;
-
-        playerCountEl.textContent = `${currentPlayers}/${maxPlayers}`;
-        statusMsgEl.textContent = currentPlayers === 0
-          ? "No hay jugadores conectados"
-          : "Jugadores en línea";
-      } catch (error) {
-        playerCountEl.textContent = "Offline";
-        statusMsgEl.textContent = "Servidor inalcanzable";
-        console.error("Error obteniendo datos del servidor:", error);
-      }
+  // Header scroll
+  let lastScroll = 0;
+  const header = document.querySelector('.main-header');
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= 0) { header.classList.remove('scroll-up'); return; }
+    if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
+      header.classList.remove('scroll-up'); header.classList.add('scroll-down');
+    } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
+      header.classList.remove('scroll-down'); header.classList.add('scroll-up');
     }
+    lastScroll = currentScroll;
+  });
 
-    getPlayerCount();
-    setInterval(getPlayerCount, 15000);
-  </script>
+  // 🔹 Obtener jugadores en línea y capacidad desde tu proxy
+  async function getPlayerCount() {
+    const playerCountEl = document.getElementById("playerCount");
+    const statusMsgEl   = document.getElementById("playerStatusMessage");
+    const statusSmall   = document.getElementById("serverStatus");
+
+    try {
+      const [playersRes, infoRes] = await Promise.all([
+        fetch("./api/fivem-proxy.php?type=players", { cache: "no-store" }),
+        fetch("./api/fivem-proxy.php?type=info",    { cache: "no-store" })
+      ]);
+
+      // Si players devuelve vacío, forzamos [] para evitar error
+      const playersText = await playersRes.text();
+      const players = playersText ? JSON.parse(playersText) : [];
+
+      const info = await infoRes.json();
+      const maxPlayers     = (info && info.vars && parseInt(info.vars.sv_maxClients, 10)) || 64;
+      const currentPlayers = Array.isArray(players) ? players.length : 0;
+
+      playerCountEl.textContent = `${currentPlayers}/${maxPlayers}`;
+      statusMsgEl.textContent   = currentPlayers === 0 ? "No hay jugadores conectados" : "Jugadores en línea";
+
+      statusSmall.textContent = "Online";
+      statusSmall.style.color = "#38d39f";
+
+    } catch (error) {
+      // Fallback seguro
+      document.getElementById("playerCount").textContent = "0/64";
+      document.getElementById("playerStatusMessage").textContent = "Servidor inalcanzable";
+      const statusSmall = document.getElementById("serverStatus");
+      statusSmall.textContent = "Offline";
+      statusSmall.style.color = "#ff6b6b";
+      console.error("Error obteniendo datos del servidor:", error);
+    }
+  }
+
+  // ▶ Ejecutar y refrescar
+  getPlayerCount();
+  setInterval(getPlayerCount, 15000);
+   // Toggle del menú móvil
+  (function(){
+    const btn  = document.getElementById('mobileMenuBtn');
+    const list = document.getElementById('navLinks');
+    const overlay = document.getElementById('navOverlay');
+
+    function toggle() {
+      list.classList.toggle('active');
+      overlay?.classList.toggle('active');
+      document.body.style.overflow = list.classList.contains('active') ? 'hidden' : '';
+    }
+    btn?.addEventListener('click', toggle);
+    overlay?.addEventListener('click', toggle);
+    // Cerrar al navegar
+    list?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      list.classList.remove('active'); overlay?.classList.remove('active'); document.body.style.overflow = '';
+    }));
+  })();
+</script>
 </body>
 </html>
