@@ -1,524 +1,420 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunidad - WENSSEN</title>
-    <link rel="icon" type="image/x-icon" href="ttps://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png">
-    <meta name="description" content="Únete a los épicos eventos de la comunidad de Minecraft"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Akrobat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidad - WENSSEN RP</title>
+  <link rel="icon" type="image/x-icon" href="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png">
+  <meta name="description" content="Comunidad oficial de Wenssen RP (FiveM). Eventos, torneos y actividades IC/OOc.">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Akrobat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="nav-container">
-            <div class="nav-left">
-                <a href="/" class="logo">
-                    <img src="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png" alt="Logo de wenssen">
-                </a>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="nav-link">RESUMEN</a></li>
-                    <li><a href="servers.html" class="nav-link">WHITELIST</a></li>
-                    <li><a href="community.html" class="nav-link active">COMUNIDAD</a></li>
-                    <li><a href="wiki.html" class="nav-link">WIKI</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <div class="server-status-mini">
-                     <div class="footer-social">
-                        <a href="https://discord.gg/FMFYqA3zYx" class="discord" data-aos="fade-left" data-aos-delay="100"><i class="fab fa-discord"></i></a>
-                        <!--<a href="#" class="twitter" data-aos="fade-left" data-aos-delay="200"><i class="fab fa-twitter"></i></a> -->
-                        <a href="https://www.youtube.com/@wenssen" class="youtube" data-aos="fade-left" data-aos-delay="300"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.tiktok.com/@wenssenrp" class="tiktok" data-aos="fade-left" data-aos-delay="400"><i class="fab fa-tiktok"></i></a>
-                     </div>
-                </div>
-            </div>
+  <header class="main-header">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="https://r2.fivemanage.com/QBZImXH97i1lTcf12q0mM/images/wenssen1.png" alt="Logo Wenssen">
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">RESUMEN</a></li>
+          <li><a href="servers.html" class="nav-link">WHITELIST</a></li>
+          <li><a href="community.html" class="nav-link active">COMUNIDAD</a></li>
+          <li><a href="wiki.html" class="nav-link">WIKI</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="server-status-mini">
+          <div class="footer-social">
+            <a href="https://discord.gg/FMFYqA3zYx" class="discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@wenssen" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@wenssenrp" class="tiktok"><i class="fab fa-tiktok"></i></a>
+          </div>
         </div>
-        <div class="nav-overlay" id="navOverlay"></div>
-    </header>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
 
-    <div class="community-page">
-        <div class="page-header">
-            <div class="header-content">
-                <h1>EVENTOS DE LA COMUNIDAD</h1>
-                <p>Únete a aventuras épicas y gana increíbles recompensas en el universo de Minecraft</p>
-                <div class="server-stats-bar">
-                    <div class="stat-item">
-                        <i class="fas fa-calendar"></i>
-                        <span>4 Eventos Activos</span>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-trophy"></i>
-                        <span>Premios de $150,000</span>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-users"></i>
-                        <span>500+ Participantes</span>
-                    </div>
-                </div>
-            </div>
+  <div class="community-page">
+    <div class="page-header">
+      <div class="header-content">
+        <h1>EVENTOS DE LA COMUNIDAD</h1>
+        <p>Actividades IC y OOC de Wenssen RP. <strong>Próximamente</strong>: activaciones con premios IC. ¡Únete al Discord para enterarte!</p>
+
+        <!-- barra de stats (situación actual: sin jugadores/eventos) -->
+        <div class="server-stats-bar">
+          <div class="stat-item">
+            <i class="fas fa-calendar"></i>
+            <span>0 eventos activos</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-trophy"></i>
+            <span>Premios IC por anunciar</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <span>Aún sin inscritos</span>
+          </div>
         </div>
-
-        <div class="content-wrapper">
-            <div class="events-container">
-                <div class="search-container">
-                    <div class="search-box">
-                        <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Buscar eventos..." id="eventSearch">
-                    </div>
-                    <div class="event-filters">
-                        <button class="filter-btn active" data-filter="all">
-                            <span>Todos</span>
-                        </button>
-                        <button class="filter-btn" data-filter="ingame">
-                            <span>En el Juego</span>
-                        </button>
-                        <button class="filter-btn" data-filter="community">
-                            <span>Comunidad</span>
-                        </button>
-                        <button class="filter-btn" data-filter="tournament">
-                            <span>Torneo</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="events-grid">
-                    <!-- Torneo de Batalla -->
-                    <div class="event-card" data-event-type="tournament">
-                        <div class="event-header">
-                            <div class="header-main">
-                                <h2>Torneo de Gran Batalla</h2>
-                                <div class="event-badges">
-                                    <span class="event-type">
-                                        <i class="fas fa-trophy"></i>
-                                        Torneo
-                                    </span>
-                                    <span class="participant-count">
-                                        <i class="fas fa-users"></i>
-                                        128 Participantes
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="event-date">
-                                <span class="day">25</span>
-                                <span class="month">MAR</span>
-                            </div>
-                        </div>
-                        <div class="event-info">
-                            <div class="event-details">
-                                <p>¡Torneo épico de guerra de clanes con recompensas exclusivas para el clan victorioso!</p>
-                                <div class="event-meta">
-                                    <div class="meta-item">
-                                        <i class="fas fa-clock"></i>
-                                        <span>20:00</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-users"></i>
-                                        <span>Entrada Ilimitada</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-coins"></i>
-                                        <span>Premio de $50,000</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="event-features">
-                                <span>Guerras de Clanes</span>
-                                <span>Combate PvP</span>
-                                <span>Recompensas Especiales</span>
-                            </div>
-                        </div>
-                        <div class="event-actions">
-                            <button class="join-btn">
-                                <div class="button-content">
-                                    <i class="fas fa-play"></i>
-                                    <span>UNIRSE AHORA</span>
-                                </div>
-                            </button>
-                            <button class="details-btn">
-                                <div class="button-content">
-                                    <i class="fas fa-info-circle"></i>
-                                    <span>DETALLES</span>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Competencia de Construcción -->
-                    <div class="event-card" data-event-type="community">
-                        <div class="event-header">
-                            <div class="header-main">
-                                <h2>Desafío Maestro Constructor</h2>
-                                <div class="event-badges">
-                                    <span class="event-type">
-                                        <i class="fas fa-hammer"></i>
-                                        Comunidad
-                                    </span>
-                                    <span class="participant-count">
-                                        <i class="fas fa-users"></i>
-                                        64 Participantes
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="event-date">
-                                <span class="day">1</span>
-                                <span class="month">ABR</span>
-                            </div>
-                        </div>
-                        <div class="event-info">
-                            <div class="event-details">
-                                <p>¡Demuestra tu creatividad y gana premios increíbles en nuestra competencia de construcción!</p>
-                                <div class="event-meta">
-                                    <div class="meta-item">
-                                        <i class="fas fa-clock"></i>
-                                        <span>15:00</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-users"></i>
-                                        <span>100 Espacios</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-coins"></i>
-                                        <span>Premio de $30,000</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="event-features">
-                                <span>Modo Creativo</span>
-                                <span>Mapa Personalizado</span>
-                                <span>Votación del Jurado</span>
-                            </div>
-                        </div>
-                        <div class="event-actions">
-                            <button class="join-btn">
-                                <div class="button-content">
-                                    <i class="fas fa-play"></i>
-                                    <span>UNIRSE AHORA</span>
-                                </div>
-                            </button>
-                            <button class="details-btn">
-                                <div class="button-content">
-                                    <i class="fas fa-info-circle"></i>
-                                    <span>DETALLES</span>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Búsqueda del Tesoro -->
-                    <div class="event-card" data-event-type="ingame">
-                        <div class="event-header">
-                            <div class="header-main">
-                                <h2>Búsqueda Épica del Tesoro</h2>
-                                <div class="event-badges">
-                                    <span class="event-type">
-                                        <i class="fas fa-map"></i>
-                                        En el Juego
-                                    </span>
-                                    <span class="participant-count">
-                                        <i class="fas fa-users"></i>
-                                        256 Participantes
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="event-date">
-                                <span class="day">30</span>
-                                <span class="month">MAR</span>
-                            </div>
-                        </div>
-                        <div class="event-info">
-                            <div class="event-details">
-                                <p>¡Embárcate en una búsqueda épica del tesoro a través de nuestro vasto mundo y descubre riquezas ocultas!</p>
-                                <div class="event-meta">
-                                    <div class="meta-item">
-                                        <i class="fas fa-clock"></i>
-                                        <span>19:00</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-users"></i>
-                                        <span>Entrada Ilimitada</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-coins"></i>
-                                        <span>Premio de $15,000</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="event-features">
-                                <span>Mapa Personalizado</span>
-                                <span>Pistas</span>
-                                <span>Recompensas Misteriosas</span>
-                            </div>
-                        </div>
-                        <div class="event-actions">
-                            <button class="join-btn">
-                                <div class="button-content">
-                                    <i class="fas fa-play"></i>
-                                    <span>UNIRSE AHORA</span>
-                                </div>
-                            </button>
-                            <button class="details-btn">
-                                <div class="button-content">
-                                    <i class="fas fa-info-circle"></i>
-                                    <span>DETALLES</span>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <!-- Modal de Detalles del Evento -->
-    <div class="modal" id="eventDetailsModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2></h2>
-                <button class="modal-close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="event-info-grid">
-                    <div class="info-section">
-                        <h3>
-                            <i class="fas fa-info-circle"></i>
-                            Información del Evento
-                        </h3>
-                        <div class="info-content">
-                            <div class="info-item">
-                                <i class="fas fa-calendar"></i>
-                                <div>
-                                    <strong>Fecha</strong>
-                                    <span class="event-date-info"></span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-clock"></i>
-                                <div>
-                                    <strong>Hora</strong>
-                                    <span class="event-time-info"></span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-users"></i>
-                                <div>
-                                    <strong>Participación</strong>
-                                    <span class="event-participants-info"></span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-coins"></i>
-                                <div>
-                                    <strong>Premio</strong>
-                                    <span class="event-prize-info"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-section">
-                        <h3>
-                            <i class="fas fa-scroll"></i>
-                            Reglas
-                        </h3>
-                        <ul class="rules-list">
-                        </ul>
-                    </div>
-                    <div class="info-section">
-                        <h3>
-                            <i class="fas fa-trophy"></i>
-                            Premios
-                        </h3>
-                        <ul class="prizes-list">
-                        </ul>
-                    </div>
+    <div class="content-wrapper">
+      <div class="events-container">
+        <div class="search-container">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar eventos..." id="eventSearch">
+          </div>
+          <div class="event-filters">
+            <button class="filter-btn active" data-filter="all"><span>Todos</span></button>
+            <button class="filter-btn" data-filter="ingame"><span>En el Juego</span></button>
+            <button class="filter-btn" data-filter="community"><span>Comunidad</span></button>
+            <button class="filter-btn" data-filter="tournament"><span>Torneo</span></button>
+          </div>
+        </div>
+
+        <div class="events-grid">
+          <!-- Torneo IC (Sin fecha aún) -->
+          <div class="event-card" data-event-type="tournament">
+            <div class="event-header">
+              <div class="header-main">
+                <h2>Torneo de Combate IC</h2>
+                <div class="event-badges">
+                  <span class="event-type"><i class="fas fa-trophy"></i> Torneo</span>
+                  <span class="participant-count"><i class="fas fa-users"></i> 0 inscritos</span>
                 </div>
+              </div>
+              <div class="event-date"><span class="day">SIN</span><span class="month">FECHA</span></div>
             </div>
-        </div>
+            <div class="event-info">
+              <div class="event-details">
+                <p>Combate legal en la Arena de la ciudad. Reglas claras, árbitros y premios IC. Se anunciará fecha y formato en Discord.</p>
+                <div class="event-meta">
+                  <div class="meta-item"><i class="fas fa-clock"></i><span>21:00 (por confirmar)</span></div>
+                  <div class="meta-item"><i class="fas fa-users"></i><span>Cupos limitados</span></div>
+                  <div class="meta-item"><i class="fas fa-coins"></i><span>Premios por anunciar</span></div>
+                </div>
+              </div>
+              <div class="event-features">
+                <span>Rol Legal</span>
+                <span>Arbitraje</span>
+                <span>Premios IC</span>
+              </div>
+            </div>
+            <div class="event-actions">
+              <a class="join-btn" href="https://discord.gg/FMFYqA3zYx" target="_blank" rel="noopener">
+                <div class="button-content"><i class="fas fa-play"></i><span>UNIRSE AL DISCORD</span></div>
+              </a>
+              <button class="details-btn">
+                <div class="button-content"><i class="fas fa-info-circle"></i><span>DETALLES</span></div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carrera Ilegal Nocturna (Sin fecha) -->
+          <div class="event-card" data-event-type="community">
+            <div class="event-header">
+              <div class="header-main">
+                <h2>Carrera Ilegal Nocturna</h2>
+                <div class="event-badges">
+                  <span class="event-type"><i class="fas fa-road"></i> Comunidad</span>
+                  <span class="participant-count"><i class="fas fa-users"></i> 0 inscritos</span>
+                </div>
+              </div>
+              <div class="event-date"><span class="day">SIN</span><span class="month">FECHA</span></div>
+            </div>
+            <div class="event-info">
+              <div class="event-details">
+                <p>Street Racing clandestino. Ruta secreta, checkpoints y control de tiempos. Aviso de convocatoria por Discord.</p>
+                <div class="event-meta">
+                  <div class="meta-item"><i class="fas fa-clock"></i><span>23:30 (por confirmar)</span></div>
+                  <div class="meta-item"><i class="fas fa-users"></i><span>Invitación</span></div>
+                  <div class="meta-item"><i class="fas fa-coins"></i><span>Premios por anunciar</span></div>
+                </div>
+              </div>
+              <div class="event-features">
+                <span>Ruta secreta</span>
+                <span>Time Attack</span>
+                <span>Premios IC</span>
+              </div>
+            </div>
+            <div class="event-actions">
+              <a class="join-btn" href="https://discord.gg/FMFYqA3zYx" target="_blank" rel="noopener">
+                <div class="button-content"><i class="fas fa-play"></i><span>UNIRSE AL DISCORD</span></div>
+              </a>
+              <button class="details-btn">
+                <div class="button-content"><i class="fas fa-info-circle"></i><span>DETALLES</span></div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Operación Evidencia Perdida (Sin fecha) -->
+          <div class="event-card" data-event-type="ingame">
+            <div class="event-header">
+              <div class="header-main">
+                <h2>Operación: Evidencia Perdida</h2>
+                <div class="event-badges">
+                  <span class="event-type"><i class="fas fa-map"></i> En el Juego</span>
+                  <span class="participant-count"><i class="fas fa-users"></i> 0 inscritos</span>
+                </div>
+              </div>
+              <div class="event-date"><span class="day">SIN</span><span class="month">FECHA</span></div>
+            </div>
+            <div class="event-info">
+              <div class="event-details">
+                <p>Búsqueda de objetos IC en puntos clave de la ciudad. Pistas, exploración y recompensas. Convocatoria por Discord.</p>
+                <div class="event-meta">
+                  <div class="meta-item"><i class="fas fa-clock"></i><span>19:00 (por confirmar)</span></div>
+                  <div class="meta-item"><i class="fas fa-users"></i><span>Libre participación</span></div>
+                  <div class="meta-item"><i class="fas fa-coins"></i><span>Premios por anunciar</span></div>
+                </div>
+              </div>
+              <div class="event-features">
+                <span>Investigación</span>
+                <span>Pistas</span>
+                <span>Exploración</span>
+              </div>
+            </div>
+            <div class="event-actions">
+              <a class="join-btn" href="https://discord.gg/FMFYqA3zYx" target="_blank" rel="noopener">
+                <div class="button-content"><i class="fas fa-play"></i><span>UNIRSE AL DISCORD</span></div>
+              </a>
+              <button class="details-btn">
+                <div class="button-content"><i class="fas fa-info-circle"></i><span>DETALLES</span></div>
+              </button>
+            </div>
+          </div>
+        </div><!-- /.events-grid -->
+      </div>
     </div>
+  </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <img src="img/logo.png" alt="Logo de Brezel" class="footer-logo">
-                <p>© 2024 Eyes Store Services</p>
+  <!-- Modal de Detalles del Evento -->
+  <div class="modal" id="eventDetailsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2></h2>
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="event-info-grid">
+          <div class="info-section">
+            <h3><i class="fas fa-info-circle"></i> Información del Evento</h3>
+            <div class="info-content">
+              <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <div><strong>Fecha</strong><span class="event-date-info"></span></div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div><strong>Hora</strong><span class="event-time-info"></span></div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-users"></i>
+                <div><strong>Participación</strong><span class="event-participants-info"></span></div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-coins"></i>
+                <div><strong>Premio</strong><span class="event-prize-info"></span></div>
+              </div>
             </div>
-            <div class="footer-social">
-                <a href="#" class="discord"><i class="fab fa-discord"></i></a>
-                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
-            </div>
+          </div>
+          <div class="info-section">
+            <h3><i class="fas fa-scroll"></i> Reglas</h3>
+            <ul class="rules-list"></ul>
+          </div>
+          <div class="info-section">
+            <h3><i class="fas fa-trophy"></i> Premios</h3>
+            <ul class="prizes-list"></ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const eventSearch = document.getElementById('eventSearch');
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const eventCards = document.querySelectorAll('.event-card');
-            const modal = document.getElementById('eventDetailsModal');
-            const modalClose = modal.querySelector('.modal-close');
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="img/wenssen_logo_sin_fondo.png" alt="Wenssen" class="footer-logo">
+        <p>© 2025 Wenssen RP — “Vive la historia, crea tu realidad”.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://discord.gg/FMFYqA3zYx" class="discord"><i class="fab fa-discord"></i></a>
+        <a href="https://www.youtube.com/@wenssen" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@wenssenrp" class="tiktok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
 
-            const eventDetails = {
-                'tournament': {
-                    title: 'Torneo de Gran Batalla',
-                    rules: [
-                        'Debes ser miembro de un clan para participar',
-                        'Cada clan puede entrar con un máximo de 10 jugadores',
-                        'Se aplican reglas de PvP',
-                        'No se permiten hacks ni exploits',
-                        'Duración del torneo: 2 horas'
-                    ],
-                    prizes: [
-                        '1er Clan: $50,000 + Etiqueta Exclusiva de Clan',
-                        '2do Clan: $25,000 + Conjunto de Armadura Especial',
-                        '3er Clan: $10,000 + Skin de Arma Única'
-                    ]
-                },
-                'community': {
-                    title: 'Desafío Maestro Constructor',
-                    rules: [
-                        'Las construcciones deben ser completamente originales',
-                        'Área máxima de construcción: 100x100 bloques',
-                        'Modo creativo permitido',
-                        'No se permite el uso de WorldEdit',
-                        'Límite de tiempo: 3 horas'
-                    ],
-                    prizes: [
-                        '1er Lugar: $30,000 + Insignia de Maestro Constructor',
-                        '2do Lugar: $15,000 + Conjunto de Bloques Especiales',
-                        '3er Lugar: $7,500 + Sombrero Único'
-                    ]
-                },
-                'ingame': {
-                    title: 'Búsqueda Épica del Tesoro',
-                    rules: [
-                        'Solo participación individual',
-                        'No se permite la formación de equipos',
-                        'PvP deshabilitado',
-                        'No se permite volar ni teletransportarse',
-                        'Límite de tiempo: 1 hora'
-                    ],
-                    prizes: [
-                        '1er Lugar: $15,000 + Cofre Legendario',
-                        '2do Lugar: $7,500 + Cofre Raro',
-                        '3er Lugar: $3,750 + Cofre Común'
-                    ]
-                }
-            };
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const eventSearch = document.getElementById('eventSearch');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const eventCards = document.querySelectorAll('.event-card');
+      const modal = document.getElementById('eventDetailsModal');
+      const modalClose = modal.querySelector('.modal-close');
 
-            function openModal(eventType) {
-                const details = eventDetails[eventType];
-                const modal = document.getElementById('eventDetailsModal');
-                
-                modal.querySelector('.modal-header h2').textContent = details.title;
-                
-                const rulesList = modal.querySelector('.rules-list');
-                rulesList.innerHTML = details.rules.map(rule => `<li>${rule}</li>`).join('');
-                
-                const prizesList = modal.querySelector('.prizes-list');
-                prizesList.innerHTML = details.prizes.map(prize => `<li>${prize}</li>`).join('');
-                
-                const card = document.querySelector(`[data-event-type="${eventType}"]`);
-                modal.querySelector('.event-date-info').textContent = `${card.querySelector('.event-date .day').textContent} ${card.querySelector('.event-date .month').textContent}`;
-                modal.querySelector('.event-time-info').textContent = card.querySelector('.meta-item:first-child span').textContent;
-                modal.querySelector('.event-participants-info').textContent = card.querySelector('.participant-count').textContent.trim();
-                modal.querySelector('.event-prize-info').textContent = card.querySelector('.meta-item:last-child span').textContent;
+      // Contenido coherente con FiveM (sin Minecraft)
+      const eventDetails = {
+        'tournament': {
+          title: 'Torneo de Combate IC',
+          rules: [
+            'Evento IC con árbitro y reglas de combate legal.',
+            'Equipamiento y normas serán informados por la organización.',
+            'Prohibido el uso de exploits o ventajas OOC.',
+            'Respeto al rol del rival y al veredicto del árbitro.',
+            'Incumplimientos pueden descalificar al participante.'
+          ],
+          prizes: [
+            '1er lugar: Premio IC + trofeo IC',
+            '2do lugar: Premio IC',
+            '3er lugar: Premio IC simbólico'
+          ]
+        },
+        'community': {
+          title: 'Carrera Ilegal Nocturna',
+          rules: [
+            'Convocatoria y ubicación por Discord el mismo día.',
+            'Se exige comportamiento IC y respeto de la ruta.',
+            'Prohibidos choques intencionados; corte de ruta descalifica.',
+            'Autos y taller según lo permitido por reglamento del evento.',
+            'La policía IC puede intervenir si corresponde al rol.'
+          ],
+          prizes: [
+            '1er lugar: Premio IC + mención en Discord',
+            '2do lugar: Premio IC',
+            '3er lugar: Premio IC simbólico'
+          ]
+        },
+        'ingame': {
+          title: 'Operación: Evidencia Perdida',
+          rules: [
+            'Actividad de búsqueda con pistas en la ciudad.',
+            'Participación individual (salvo aviso contrario).',
+            'Está prohibido el meta y cualquier ventaja OOC.',
+            'Quien encuentre más evidencias válidas, gana.',
+            'Entrega y validación con staff al cierre del evento.'
+          ],
+          prizes: [
+            'Recompensas IC por evidencia válida',
+            'Bonus para el 1er lugar',
+            'Sorteo OOC de rol destacado (si aplica)'
+          ]
+        }
+      };
 
-                modal.classList.add('show');
-                document.body.style.overflow = 'hidden';
-            }
+      function openModal(eventType) {
+        const details = eventDetails[eventType];
+        modal.querySelector('.modal-header h2').textContent = details.title;
 
-            document.querySelectorAll('.details-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const card = e.target.closest('.event-card');
-                    const eventType = card.dataset.eventType;
-                    openModal(eventType);
-                });
-            });
+        const rulesList = modal.querySelector('.rules-list');
+        rulesList.innerHTML = details.rules.map(rule => `<li>${rule}</li>`).join('');
 
-            modalClose.addEventListener('click', () => {
-                modal.classList.remove('show');
-                document.body.style.overflow = '';
-            });
+        const prizesList = modal.querySelector('.prizes-list');
+        prizesList.innerHTML = details.prizes.map(prize => `<li>${prize}</li>`).join('');
 
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.classList.remove('show');
-                    document.body.style.overflow = '';
-                }
-            });
+        const card = document.querySelector(`[data-event-type="${eventType}"]`);
+        modal.querySelector('.event-date-info').textContent =
+          `${card.querySelector('.event-date .day').textContent} ${card.querySelector('.event-date .month').textContent}`;
+        modal.querySelector('.event-time-info').textContent =
+          card.querySelector('.meta-item:first-child span').textContent;
+        modal.querySelector('.event-participants-info').textContent =
+          card.querySelector('.participant-count').textContent.trim();
+        modal.querySelector('.event-prize-info').textContent =
+          card.querySelector('.meta-item:last-child span').textContent;
 
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal.classList.contains('show')) {
-                    modal.classList.remove('show');
-                    document.body.style.overflow = '';
-                }
-            });
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
 
-            function filterEvents() {
-                const searchTerm = eventSearch.value.toLowerCase();
-                const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
-
-                eventCards.forEach(card => {
-                    const title = card.querySelector('h2').textContent.toLowerCase();
-                    const description = card.querySelector('p').textContent.toLowerCase();
-                    const type = card.dataset.eventType;
-                    
-                    const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
-                    const matchesFilter = activeFilter === 'all' || type === activeFilter;
-
-                    if (matchesSearch && matchesFilter) {
-                        card.style.display = 'flex';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    } else {
-                        card.style.display = 'none';
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(20px)';
-                    }
-                });
-
-                const noResults = document.querySelector('.no-results');
-                const visibleCards = Array.from(eventCards).filter(card => card.style.display !== 'none');
-
-                if (visibleCards.length === 0) {
-                    if (!noResults) {
-                        const message = document.createElement('div');
-                        message.className = 'no-results';
-                        message.innerHTML = `
-                            <div class="no-results-content">
-                                <i class="fas fa-search"></i>
-                                <p>No se encontraron resultados</p>
-                                <span>Prueba con diferentes palabras clave o limpia los filtros</span>
-                            </div>
-                        `;
-                        document.querySelector('.events-grid').appendChild(message);
-                    }
-                } else if (noResults) {
-                    noResults.remove();
-                }
-            }
-
-            eventSearch.addEventListener('input', () => {
-                filterEvents();
-            });
-
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    filterEvents();
-                });
-            });
+      document.querySelectorAll('.details-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('.event-card');
+          const eventType = card.dataset.eventType;
+          openModal(eventType);
         });
-    </script>
+      });
+
+      modalClose.addEventListener('click', () => {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+          document.body.style.overflow = '';
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+          modal.classList.remove('show');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // Filtros + búsqueda
+      function filterEvents() {
+        const searchTerm = eventSearch.value.toLowerCase();
+        const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+
+        eventCards.forEach(card => {
+          const title = card.querySelector('h2').textContent.toLowerCase();
+          const description = card.querySelector('p').textContent.toLowerCase();
+          const type = card.dataset.eventType;
+
+          const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+          const matchesFilter = activeFilter === 'all' || type === activeFilter;
+
+          if (matchesSearch && matchesFilter) {
+            card.style.display = 'flex';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          } else {
+            card.style.display = 'none';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+          }
+        });
+
+        const noResults = document.querySelector('.no-results');
+        const visibleCards = Array.from(eventCards).filter(card => card.style.display !== 'none');
+
+        if (visibleCards.length === 0) {
+          if (!noResults) {
+            const message = document.createElement('div');
+            message.className = 'no-results';
+            message.innerHTML = `
+              <div class="no-results-content">
+                <i class="fas fa-search"></i>
+                <p>No se encontraron resultados</p>
+                <span>Prueba con otras palabras clave o limpia filtros</span>
+              </div>
+            `;
+            document.querySelector('.events-grid').appendChild(message);
+          }
+        } else if (noResults) {
+          noResults.remove();
+        }
+      }
+
+      eventSearch.addEventListener('input', filterEvents);
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          filterEvents();
+        });
+      });
+    });
+  </script>
 </body>
 </html>
