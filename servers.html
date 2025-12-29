@@ -100,7 +100,7 @@
       <input type="text" id="discordId" name="discordId" required pattern="\d{18}" />
 
       <label for="origin">¿Dónde nació tu personaje?</label>
-      <textarea id="origin" name="origin" rows="3" required placeholder="¿Dentro de Wenssen? ¿Fuera del muro? ¿Refugiado, criado por el sistema...?"></textarea>
+      <textarea id="origin" name="origin" rows="3" maxlength="50" required placeholder="¿Dentro de Wenssen? ¿Fuera del muro? ¿Refugiado, criado por el sistema...?"></textarea>
 
       <label for="aspiration">¿A qué facción aspira pertenecer?</label>
       <select id="aspiration" name="aspiration" required>
@@ -111,22 +111,22 @@
       </select>
 
       <label for="background">Historia del personaje</label>
-      <textarea id="background" name="background" rows="5" required placeholder="Su historia, motivaciones pasadas, eventos importantes..."></textarea>
+      <textarea id="background" name="background" rows="5" maxlength="700" required placeholder="Su historia, motivaciones pasadas, eventos importantes..."></textarea>
 
       <label for="job">¿Cuál es su ocupación actual?</label>
-      <textarea id="job" name="job" rows="2" required placeholder="Ej: Técnico, comerciante, criminal, civil..."></textarea>
+      <textarea id="job" name="job" rows="2" maxlength="50" required placeholder="Ej: Técnico, comerciante, criminal, civil..."></textarea>
 
       <label for="goals">Objetivos o motivaciones</label>
-      <textarea id="goals" name="goals" rows="3" required></textarea>
+      <textarea id="goals" name="goals" rows="3" maxlength="310" required></textarea>
 
       <label for="skills">Fortalezas / Habilidades</label>
-      <textarea id="skills" name="skills" rows="2" required placeholder="Ej: liderazgo, hackeo, manipulación, medicina, etc."></textarea>
+      <textarea id="skills" name="skills" rows="2" maxlength="240" required placeholder="Ej: liderazgo, hackeo, manipulación, medicina, etc."></textarea>
 
       <label for="flaws">Debilidades / Defectos</label>
-      <textarea id="flaws" name="flaws" rows="2" required placeholder="Ej: paranoia, impulsividad, falta de empatía..."></textarea>
+      <textarea id="flaws" name="flaws" rows="2" maxlength="255" required placeholder="Ej: paranoia, impulsividad, falta de empatía..."></textarea>
 
       <label for="secret">¿Oculta algún secreto?</label>
-      <textarea id="secret" name="secret" rows="3" placeholder="Opcional. Algo que podría salir a la luz en rol..."></textarea>
+      <textarea id="secret" name="secret" rows="3" maxlength="265" placeholder="Opcional. Algo que podría salir a la luz en rol..."></textarea>
 
       <button type="submit" class="primary-btn" style="margin-top: 1rem;">
         <i class="fas fa-paper-plane"></i> Enviar Ficha
@@ -148,7 +148,7 @@
       </div>
     </div>
   </footer>
-  
+
   <script>
     document.getElementById('whitelistForm').addEventListener('submit', async function (e) {
       e.preventDefault();
