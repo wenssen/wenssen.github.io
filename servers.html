@@ -97,7 +97,8 @@
       <input type="number" id="age" name="age" required min="16" max="90" />
 
       <label for="discordId">Discord ID</label>
-      <input type="text" id="discordId" name="discordId" required pattern="\d{18}" />
+      <input  type="text"  id="discordId"  name="discordId"  required  inputmode="numeric"  pattern="^\d{17,19}$"  minlength="17"  maxlength="19"/>
+
 
       <label for="origin">¿Dónde nació tu personaje?</label>
       <textarea id="origin" name="origin" rows="3" maxlength="50" required placeholder="¿Dentro de Wenssen? ¿Fuera del muro? ¿Refugiado, criado por el sistema...?"></textarea>
